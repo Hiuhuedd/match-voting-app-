@@ -1,3 +1,64 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer base {
+    @font-face {
+      font-family: 'Poppins';
+      src: url('../public/font/Poppins-Regular.woff2') format('woff2');
+      font-weight: 300;
+      font-display: swap;
+      font-style: normal;
+    }
+  
+    @font-face {
+      font-family: 'Lato';
+      src: url('../public/font/Lato-Regular.woff2') format('woff2');
+      font-weight: 400;
+      font-display: swap;
+      font-style: normal;
+    }
+  
+    /* @font-face {
+      font-family: Gilroy;
+      src: url('/fonts/Gilroy-Medium.ttf');
+      font-weight: 500;
+    }
+  
+    @font-face {
+      font-family: Gilroy;
+      src: url('/fonts/Gilroy-Semibold.ttf');
+      font-weight: 600;
+    }
+  
+    @font-face {
+      font-family: Gilroy;
+      src: url('/fonts/Gilroy-Bold.ttf');
+      font-weight: 700;
+    } */
+  }
+  
+  @layer components {
+    .menu-items {
+      @apply relative flex cursor-pointer items-center  hover:border-b-[1px] border-gray-400  text-sm font-light text-gray-900 transition-all duration-300 ease-linear hover:text-gray-400;
+    }
+  }
+  
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    border-radius: 0px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: linear-gradient(315deg, #cecece 0%, #bbbbbb 74%);
+  }
+  
+  /* body {
+    background: rgb(250, 250, 250);
+  } */
+  
